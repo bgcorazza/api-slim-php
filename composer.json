@@ -1,0 +1,24 @@
+{
+	"name" : "api/slimphp",
+	"version": "1.0.0",
+	"require" : {
+		"php" : ">=7.1.0",
+		"slim/slim" : "^3.1",
+		"palanik/corsslim" : "dev-slim3",
+		"psr/http-message" : "^1.0",
+		"bryanjhv/slim-session" : "~3.0",
+		"slim/flash" : "^0.4.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : ">=4.8 < 6.0"
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Modules\\" : "src/Modules"
+		}
+	},
+	"config" : {
+		"process-timeout" : 0,
+		"secure-http":false
+	}
+}
